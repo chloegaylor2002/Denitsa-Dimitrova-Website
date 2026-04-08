@@ -93,7 +93,14 @@ p { margin: 0 0 16px; }
   border: 1px solid var(--border);
   background: linear-gradient(145deg, #e8ecf2, #f7f8fb);
 }
-.hero-photo img { width: 100%; display: block; }
+.hero-photo img { 
+  width: 100%;
+  max-width: 340px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 20%;
+  border-radius: 24px;
+  display: block; }
 .button-row {
   display: flex;
   flex-wrap: wrap;
